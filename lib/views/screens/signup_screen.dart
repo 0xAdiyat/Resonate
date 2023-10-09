@@ -157,7 +157,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         child: Padding(
                           padding: EdgeInsets.only(top: UiSizes.height_20),
                           child: SizedBox(
-                              height: UiSizes.height_40,
+                              height: UiSizes.height_45,
                               width: Get.width,
                               child: PasswordStrengthIndicator(
                                 isPasswordSixCharacters:
@@ -185,7 +185,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       ),
                     ),
                   ),
-                  SizedBox(height: UiSizes.height_20),
+                  SizedBox(height: UiSizes.height_24_6),
                   Obx(
                     () => ElevatedButton(
                       onPressed: emailVerifyController.signupisallowed.value
