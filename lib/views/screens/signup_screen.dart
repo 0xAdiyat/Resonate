@@ -157,7 +157,8 @@ class _SignupScreenState extends State<SignupScreen> {
                         child: Padding(
                           padding: EdgeInsets.only(top: UiSizes.height_20),
                           child: SizedBox(
-                              height: UiSizes.height_45,
+                              height: UiSizes.height_40,
+                              width: Get.width,
                               child: PasswordStrengthIndicator(
                                 isPasswordSixCharacters:
                                     passwordStrengthCheckerController
@@ -176,12 +177,15 @@ class _SignupScreenState extends State<SignupScreen> {
                                     "Include at least 1 uppercase letter",
                                 hasLowerCaseTitle:
                                     "Include at least 1 lowercase letter",
+                                validatedChecks:
+                                    passwordStrengthCheckerController
+                                        .validatedChecks.value,
                               )),
                         ),
                       ),
                     ),
                   ),
-                  SizedBox(height: UiSizes.height_24_6),
+                  SizedBox(height: UiSizes.height_20),
                   Obx(
                     () => ElevatedButton(
                       onPressed: emailVerifyController.signupisallowed.value
